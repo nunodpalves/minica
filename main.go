@@ -141,7 +141,7 @@ func makeRootCert(key crypto.Signer, filename string) (*x509.Certificate, error)
 		},
 		SerialNumber: serial,
 		NotBefore:    time.Now(),
-		NotAfter:     time.Now().AddDate(100, 0, 0),
+		NotAfter:     time.Now().AddDate(10, 0, 0),
 
 		SubjectKeyId:          skid,
 		AuthorityKeyId:        skid,
